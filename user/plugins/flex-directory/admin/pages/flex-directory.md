@@ -1,5 +1,5 @@
 ---
-title: FlexDirectory
+title: Member Directory
 
 access:
     admin.flex-directory: true
