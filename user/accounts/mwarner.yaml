@@ -1,0 +1,11 @@
+email: mwarner@dealman.net
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: 'Mark Warner'
+title: Director
+state: enabled
+hashed_password: $2y$10$YA72tBPCSdcXPSs7brQFxutn.X01dUWhzOEVbdkXd/Ar9/My/mYjG
