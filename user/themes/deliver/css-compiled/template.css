@@ -108,6 +108,7 @@ b, strong, label, th {
     width: 200px;
     height: 65.594px;
     background-image: url('../images/logo-primary.png');
+    background-repeat: no-repeat;
     background-size: contain;
   }
   #header .fa {
@@ -135,6 +136,7 @@ b, strong, label, th {
       width: 150px;
       height: 49.188px;
       background-image: url('../images/logo-primary.png');
+      background-repeat: no-repeat;
       background-size: contain; } }
    
    .header-lite #header .fa-search, #header .fa-search {
