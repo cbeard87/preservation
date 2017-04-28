@@ -1,0 +1,31 @@
+enabled: true
+date_format:
+  translate: true
+  long: 'Y-m-d h:ia'
+  medium: m/d/Y
+  short: 'M j'
+  default: 'F j, Y h:ia'
+filter_combinator: or
+taxonomy_type: event
+event_template_types: 'calendar, events, event'
+display_months_out: '6'
+show_past_events: false
+enable_single_event_filter: true
+default_events_page: events
+events_collection: '''@page'': ''/events'''
+google_maps: AIzaSyB_GKHdDoqq4G9ZBCNbPVJ_2BLUHrXN-ew
+calendar:
+  month: F
+  year: 'Y'
+  anchor_title: 'l, F j, Y'
+  details:
+    title: 'l, F j'
+    time: 'g:ia'
+event_item:
+  day: d
+  month: F
+  start_time: 'g:ia'
+  end_time: 'g:ia'
+event_sidebar:
+  header: 'l, F d'
+  time: 'g:ia'

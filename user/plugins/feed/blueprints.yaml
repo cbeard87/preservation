@@ -1,0 +1,55 @@
+name: Feed
+version: 1.5.3
+description: The **Feed** plugin is a simple yet powerful add-on that lets you view a BPS Collection as **RSS** or **Atom** news feed.
+icon: rss
+author:
+  name: Christopher Beard
+  email: contact@chrisbeard.io
+  url: http://chrisbeard.io
+homepage: https://github.com/cbeard87
+demo: http://demo.getgrav.org/blog-skeleton
+keywords: feed, plugin, rss, atom, collection
+bugs: https://github.com/cbeard87/preservation/issues
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    limit:
+      type: text
+      label: Feed count
+      validate:
+        type: number
+        min: 10
+        max: 1000
+
+    description:
+      type: textarea
+      label: Description
+
+    lang:
+      type: text
+      label: Feed language code
+      default: en
+      placeholder: en
+      validate:
+        pattern: "[a-zA-Z]{2,3}(-[a-zA-Z]{2,3})?"
+
+    length:
+      type: text
+      label: Feed Length
+      validate:
+        type: number
+        min: 10
+        max: 10000

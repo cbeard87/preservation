@@ -1,0 +1,18 @@
+email: contact@chrisbeard.io
+fullname: 'Christopher Beard'
+title: Administrator
+state: enabled
+access:
+  admin:
+    super: 'true'
+    login: 'true'
+  site:
+    login: 'true'
+hashed_password: $2y$10$k3psJOqtrlqgRLh/LFdqxemUi0TveQLbSmGkWe/ysnerICqXaWU4S
+language: en
+avatar:
+  user/accounts/avatars/etDBFOIyE5f9J3C.png:
+    name: etDBFOIyE5f9J3C.png
+    type: image/png
+    size: 51426
+    path: user/accounts/avatars/etDBFOIyE5f9J3C.png

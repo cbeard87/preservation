@@ -1,0 +1,234 @@
+// Your custom SCSS should be written here...
+
+/* html5 .event-button element */
+.event-button {
+  display: inline-block;
+  border: 2px solid #1BB3E9;
+  border-radius: 4px;
+  padding: 0.5rem 2rem;
+  color: #1BB3E9;
+  background: #ffffff; }
+  .event-button:hover {
+    color: #fff;
+    border: 2px solid #1BB3E9;
+    background: #1BB3E9; }
+
+/* html5 .events-container element */
+.events-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .events-container::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .events-container .featured-events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .events-container .featured-events .featured-event {
+      flex-basis: 40%;
+      flex-grow: 1;
+      margin: 0 1rem 2rem; }
+      .events-container .featured-events .featured-event .featured-event-masthead {
+        position: relative; }
+        .events-container .featured-events .featured-event .featured-event-masthead img {
+          display: block;
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px; }
+        .events-container .featured-events .featured-event .featured-event-masthead .featured-event-title {
+          position: absolute;
+          bottom: 2rem;
+          padding: 0 2rem;
+          margin: 0;
+          background: rgba(255, 255, 255, 0.8);
+          background: rgba(255, 255, 255, 0.8);
+          color: #222; }
+          .events-container .featured-events .featured-event .featured-event-masthead .featured-event-title a {
+            color: #222; }
+      .events-container .featured-events .featured-event .featured-event-content {
+        border: 1px solid #efefef;
+        padding: 0.5rem 2rem;
+        overflow: hidden;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px; }
+        .events-container .featured-events .featured-event .featured-event-content .event-meta-information {
+          padding-left: 0;
+          list-style: none;
+          display: block; }
+          .events-container .featured-events .featured-event .featured-event-content .event-meta-information li {
+            display: inline-block;
+            margin-right: 1em; }
+            .events-container .featured-events .featured-event .featured-event-content .event-meta-information li i {
+              width: 1rem; }
+  .events-container .events-listing {
+    padding-bottom: 2rem; }
+    .events-container .events-listing .event-item {
+      display: block;
+      border-bottom: 1px solid #efefef;
+      padding: 1rem 0; }
+      .events-container .events-listing .event-item::after {
+        clear: both;
+        content: "";
+        display: block; }
+      .events-container .events-listing .event-item:last-child {
+        border-bottom: 0; }
+      .events-container .events-listing .event-item .event-image {
+        float: left;
+        display: block;
+        margin-right: 5.85151%;
+        width: 15.31879%; }
+        .events-container .events-listing .event-item .event-image:last-child {
+          margin-right: 0; }
+        .events-container .events-listing .event-item .event-image img {
+          padding: 0;
+          margin: 1rem 0 0;
+          border-radius: 3px; }
+      .events-container .events-listing .event-item .event-content {
+        float: left;
+        display: block;
+        margin-right: 5.85151%;
+        width: 78.8297%;
+        display: block; }
+        .events-container .events-listing .event-item .event-content:last-child {
+          margin-right: 0; }
+        .events-container .events-listing .event-item .event-content::after {
+          clear: both;
+          content: "";
+          display: block; }
+        .events-container .events-listing .event-item .event-content h3 {
+          margin: 0; }
+        .events-container .events-listing .event-item .event-content .event-meta {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%;
+          margin-right: 0; }
+          .events-container .events-listing .event-item .event-content .event-meta:last-child {
+            margin-right: 0; }
+          .events-container .events-listing .event-item .event-content .event-meta ul {
+            list-style: none;
+            padding-left: 0; }
+            .events-container .events-listing .event-item .event-content .event-meta ul li i {
+              width: 1.5rem; }
+        .events-container .events-listing .event-item .event-content .event-summary {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 65.88078%;
+          margin-right: 0; }
+          .events-container .events-listing .event-item .event-content .event-summary:last-child {
+            margin-right: 0; }
+
+/* html5 .event-container element */
+.event-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .event-container::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .event-container .event-listing {
+    float: left;
+    display: block;
+    margin-right: 4.11092%;
+    width: 70.25402%; }
+    .event-container .event-listing:last-child {
+      margin-right: 0; }
+  .event-container .events-sidebar {
+    float: left;
+    display: block;
+    margin-right: 4.11092%;
+    width: 25.63506%; }
+    .event-container .events-sidebar:last-child {
+      margin-right: 0; }
+
+/* html5 .event-article element */
+.event-article {
+  padding: 1rem 0; }
+  .event-article .event-header {
+    display: block;
+    position: relative; }
+    .event-article .event-header::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .event-article .event-header .event-date {
+      position: absolute;
+      text-align: right;
+      top: 0;
+      right: 0;
+      padding: 0.25rem 1rem;
+      background: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.85);
+      color: #222;
+      height: 140px;
+      width: 160px; }
+      .event-article .event-header .event-date .day {
+        display: block;
+        font-size: 3.75rem;
+        font-weight: bold;
+        margin: 0;
+        line-height: 1; }
+      .event-article .event-header .event-date .month {
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.35rem;
+        line-height: 1;
+        margin: 0.5rem 0; }
+      .event-article .event-header .event-date .time {
+        display: block;
+        line-height: 1; }
+      .event-article .event-header .event-date .year {
+        display: none; }
+  .event-article .event-content {
+    display: block; }
+    .event-article .event-content::after {
+      clear: both;
+      content: "";
+      display: block; }
+  .event-article .event-footer {
+    display: block; }
+    .event-article .event-footer::after {
+      clear: both;
+      content: "";
+      display: block; }
+
+/* html5 .events-sidebar element */
+.events-sidebar .events-list {
+  list-style: none;
+  padding-left: 0; }
+  .events-sidebar .events-list .event-day {
+    font-size: 2rem;
+    margin-top: 1rem; }
+  .events-sidebar .events-list .event-dow {
+    font-size: 1.2rem; }
+
+/* html5 .event-tags element */
+.event-tags {
+  display: inline-block; }
+  .event-tags a {
+    display: inline-block;
+    border: 1px solid #1BB3E9;
+    border-radius: 4px;
+    padding: 0 0.5rem;
+    text-transform: uppercase;
+    font-size: .85rem;
+    font-weight: normal; }
+
+.grav-lightslider {
+    .lSSlideOuter {
+        .lSPager.lSpg {
+            > li a {
+                z-index: 1;
+            }
+        }
+    }
+}
+
+#body > script:first-child + .grav-lightslider {
+  margin-top: -3rem;
+}
+

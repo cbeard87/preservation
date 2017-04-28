@@ -1,0 +1,139 @@
+name: Events
+version: 1.0.15
+description: "The **Events** plugin provides events for a Grav site using event frontmatter."
+icon: calendar
+author:
+  name: Kaleb Heitzman
+  email: kalebheitzman@gmail.com
+  url: http://kheitzman.com
+homepage: http://github.com/kalebheitzman/grav-plugin-events
+demo: http://grav.brandr.co/calendar
+keywords: events, calendar, plugin
+bugs: https://github.com/kalebheitzman/grav-plugin-events/issues
+license: MIT
+
+dependencies:
+  - datetools
+
+form:
+  validation: loose
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        setup:
+          type: tab
+          title: Customize
+          fields:
+            customize:
+              type: section
+              title: Customize
+              underline: true
+            event_template_types:
+              type: text
+              label: Event Template Types
+              help: What templates should be checked for event related content?
+              default: event
+            display_months_out:
+              type: text
+              label: Months Out to Display Events
+              help: In integer form, how many months out should repeating dates display?
+              default: 3
+              placeholder: 3
+            enable_single_event_filter:
+              type: toggle
+              label: Enable Single Event Filter
+              highlight: 1
+              default: 1
+              options:
+                1: Enabled
+                0: Disabled
+              validate:
+                type: bool
+            collections:
+              type: section
+              title: Collections
+              underline: true
+            filter_combinator:
+              type: text
+              label: Filter Combinator
+              default: and
+            events_collection:
+              type: text
+              label: Events Collection
+              default: "'@page': '/events'"
+
+        api:
+          type: tab
+          title: APIs
+          fields:
+            google_maps:
+              type: text
+              label: Google Maps API Key
+              placeholder: Enter your api key
+
+        formatting:
+          type: tab
+          title: Date Formatting
+          fields:
+
+            calendar:
+              type: section
+              title: Calendar
+              underline: true
+            calendar.month:
+              type: text
+              label: Month Display
+              default: F
+            calendar.year:
+              type: text
+              label: Year Display
+              default: Y
+            calendar.anchor_title:
+              type: text
+              label: Anchor Title
+              default: l, F j, Y
+            calendar.details.title:
+              type: text
+              label: Details Day Title
+              default: l, F j
+            calendar.details.time:
+              type: text
+              label: Details Time of Day
+              default: g:ia
+
+            event_item:
+              type: section
+              title: Event Item
+              underline: true
+            event_item.day:
+              type: text
+              label: Date Box Day
+              default: d
+            event_item.month:
+              type: text
+              label: Date Box Month
+              default: F
+            event_item.start_time:
+              type: text
+              label: Date Box Start Time
+              default: g:ia
+            event_item.end_time:
+              type: text
+              label: Date Box End Time
+              default: g:ia
+
+            event_sidebar:
+              type: section
+              title: Event Sidebar
+              underline: true
+            event_sidebar.header:
+              type: text
+              label: Header
+              default: l, F d
+            event_sidebar.time:
+              type: text
+              label: Time
+              default: g:ia

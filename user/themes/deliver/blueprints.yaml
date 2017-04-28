@@ -1,0 +1,38 @@
+name: Preservation
+version: 1.6.2
+description: "The Preservation theme is a custom designed template for the Bluefield Preservation Society."
+icon: newspaper-o
+author:
+  name: Christopher Beard
+  email: contact@chrisbeard.io
+  url: http://chrisbeard.io
+homepage: https://github.com/cbeard87/preservation
+demo: http://demo.getgrav.org/deliver-skeleton/
+keywords: preservation, theme, modern, fast, responsive, html5, css3
+bugs: https://github.com/cbeard87/preservation/issues
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in navbar
+        highlight: 1
+        default: 0
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool
+
+    sticky_menu.enabled:
+        type: toggle
+        label: Sticky menu
+        highlight: 1
+        default: 0
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool

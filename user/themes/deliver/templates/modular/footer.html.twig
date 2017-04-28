@@ -1,0 +1,74 @@
+<div class="modular-row footer {{ page.header.class}}">
+    <div class="footer-items">
+        <div class="footer-module large">
+            <div class="logo">
+                <a href="{{ base_url == '' ? '/' : base_url }}"><img src="{{ theme_url }}/images/logo-white.png" alt="Bluefield Preservation Society" /></a>
+            
+                {% block social %}
+                    {% include 'partials/social.html.twig' %}
+                {% endblock %}
+
+            </div>
+            {% if site.footer.description %}
+                <p>{{ site.footer.description }}</p>
+            {% endif %}
+            <div class="contact-info">
+                <div class="address-block">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="address-lines">
+                        {% for item in site.contact.address %}
+                            <span>{{ item.line }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="email-block">
+                    <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                    <div class="email-lines">
+                        <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+                    </div>  
+                </div>
+                
+                <div class="phone-block">
+                    <i class="fa fa-phone-square"></i>
+                    <div class="phone-lines">
+                        <a href="tel:+13045890239">{{ site.contact.gps }}</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="footer-module"><h4>{{ site.footer.links_title }}</h4>
+         <ul class="quickmenu">
+            {% for module in site.quicklinks %}
+                <li><i class="fa fa-chevron-right"></i><a href="{% if "base_url:" in module.url %}{{ base_url_absolute }}/{{ module.url|replace({"base_url:": ""}) }}{% else %}{{ module.url }}{% endif %}">{{  module.text }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="footer-module">
+        <h4>{{ site.footer.newsletter_title }}</h4>
+        <p>{{ site.footer.newsletter_description }}</p>
+
+        <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri={{ site.footer.feedburner }}', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" class="newsletter">
+        <input type="text" name="email" value="Email" onclick="if(this.value=='Email')this.value='';" onblur="if(this.value=='')this.value='Email';"/>
+        <input type="hidden" value="karolorzel" name="uri"/>
+        <input type="hidden" name="loc" value="en_US"/>
+        <input type="submit" value="OK" />
+        </form>
+    </div>
+</div>
+<hr>
+<div class="footer-modules">
+    <div class="footer-copyright">
+        {{ site.author.copyright }}
+    </div>
+    <div class="footer-menu">
+    <ul class="othermenu">
+    {% for module in site.othermenu %}
+       <li><a href="{{ module.url }}">{{  module.text }}</a></li>
+    {% endfor %}
+    </ul>
+    </div>
+</div>
+</div>

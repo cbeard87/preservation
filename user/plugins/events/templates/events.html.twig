@@ -1,0 +1,73 @@
+{% embed 'partials/base.html.twig' %}
+
+{# get events by taxonomy #}
+{% set events =
+    page.collection({
+      'items': {
+        '@taxonomy': {
+          'type': 'event',
+        }
+      },
+      'dateRange': {
+        'start': datetools.today|date('m/d/Y'),
+      },
+      'order': {
+        'by': 'date',
+        'dir': 'asc'
+      },
+      'limit': 10,
+      'pagination': true
+    })
+%}
+
+{% block content %}
+{% set blog_image = page.media.images|first %}
+
+{% if blog_image %}
+<div class="flush-top blog-header blog-header-image" style="background: {{ page.header.bg_color }} url({{ blog_image.url }}) no-repeat right;">
+	{% else %}
+	<div class="blog-header">
+		{% endif %}
+		{{ page.content }}
+	</div>
+
+  {% if config.plugins.breadcrumbs.enabled %}
+  {% include 'partials/breadcrumbs.html.twig' %}
+  {% endif %}
+
+<div class="content-wrapper">
+
+  <div class="event-container">
+
+    <section class="event-listing">
+
+      
+
+      {% if events|length != 0 %}
+        {% for event in events %}
+          {% include 'partials/event_item.html.twig' with { 'page': event , 'truncate': true, 'single': false } %}      
+        {% endfor %}
+      {% else %}
+        <h3>{{ "PLUGIN_EVENTS.EVENTS.NO_EVENTS_TITLE"|t }}</h3>
+        <p>{{ ("PLUGIN_EVENTS.EVENTS.NO_EVENTS_CONTENT"|t(uri.param('category')))|markdown }}</p>
+      {% endif %}
+
+
+  </section>
+
+    {% include 'partials/events_sidebar.html.twig' with {'page':page.parent} %}
+
+  
+
+  {# Render the pagination list #}
+  {% if config.plugins.pagination.enabled and events.params.pagination %}
+      {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+  {% endif %}
+
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% endembed %}

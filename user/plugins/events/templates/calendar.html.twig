@@ -1,0 +1,173 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+{% set blog_image = page.media.images|first %}
+
+{% if blog_image %}
+<div class="flush-top blog-header blog-header-image" style="background: {{ page.header.bg_color }} url({{ blog_image.url }}) no-repeat right;">
+	{% else %}
+	<div class="blog-header">
+		{% endif %}
+		{{ page.content }}
+	</div>
+</div>
+
+<div class="content-wrapper">
+
+  <div class="calendar-container clear-user-agent-styles">
+
+    {% set prevYearUrl = page.url ~ '/year:' ~ calendar.prevYear|date('Y') ~ '/month:' ~ calendar.prevYear|date('m') %}
+    {% set nextYearUrl = page.url ~ '/year:' ~ calendar.nextYear|date('Y') ~ '/month:' ~ calendar.nextYear|date('m') %}
+    {% set prevMonthUrl = page.url ~ '/year:' ~ calendar.prev.date|date('Y') ~ '/month:' ~ calendar.prev.date|date('m') %}
+    {% set nextMonthUrl = page.url ~ '/year:' ~ calendar.next.date|date('Y') ~ '/month:' ~ calendar.next.date|date('m') %}
+
+    <section class="calendar-table">
+
+        <table class="calendar">
+            <thead>
+                <tr class="controls">
+                    <th colspan="4" class="month">
+                        <a href="{{ prevMonthUrl }}" class="calendar-button calendar-control">&lsaquo;</a>
+                        <span class="month">{{ calendar.date|date(config.plugins.events.calendar.month) }}</span>
+                        <a href="{{ nextMonthUrl }}" class="calendar-button calendar-control">&rsaquo;</a>
+                    </th>
+                    <th colspan="3" class="year">
+                        <a href="{{ prevYearUrl }}" class="calendar-button calendar-control">&lsaquo;</a>
+                        <span class="year">{{ calendar.date|date(config.plugins.events.calendar.year) }}</span>
+                        <a href="{{ nextYearUrl }}" class="calendar-button calendar-control">&rsaquo;</a>
+                    </th>
+                </tr>
+                <tr class="headings">
+                    <th width="14.2%">{{ 'DAYS_OF_THE_WEEK'|ta(6) }}</th>
+                    <th width="14.2%">{{ 'DAYS_OF_THE_WEEK'|ta(0) }}</th>
+                    <th width="14.2%">{{ 'DAYS_OF_THE_WEEK'|ta(1) }}</th>
+                    <th width="14.2%">{{ 'DAYS_OF_THE_WEEK'|ta(2) }}</th>
+                    <th width="14.2%">{{ 'DAYS_OF_THE_WEEK'|ta(3) }}</th>
+                    <th width="14.2%">{{ 'DAYS_OF_THE_WEEK'|ta(4) }}</th>
+                    <th width="14.2%">{{ 'DAYS_OF_THE_WEEK'|ta(5) }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                {% set startDow = calendar.date|date('F 1\\s\\t Y')|date('w') %}
+                {% set dow = startDow %}
+                {% set month = "now"|date("F") %}
+                {% for day in range(1,calendar.daysInMonth) %}
+                    {% if loop.first and startDow != 0 %}
+                        <td colspan="{{ startDow }}"></td>
+                    {% endif %}
+                    <td>
+                        <div class="events">
+                            {% if calendar.events[calendar.year][calendar.month][day] != null %}
+    							{% set title_date = calendar.month ~ '/' ~ day ~ '/' ~ calendar.year %}
+    							<div class="day">
+                                    <a 
+                                        class="calendar-day-link {% if (day == calendar.currentDay) and (month == calendar.date|date("F")) %}active{% endif %}" 
+                                        href="#!" title="{{ title_date|date(config.plugins.events.calendar.anchor_title) }}">
+                                        {{ day }}
+                                    </a>
+                                </div>
+    						{% else %}
+    							<div class="day {% if (day == calendar.currentDay) and (month == calendar.date|date("F")) %}active{% endif %}">
+                                    <span >{{ day }}</span>
+                                </div>
+                            {% endif %}
+                            
+                            <div class="calendar-day-details">
+                                {% set title_date = calendar.month ~ '/' ~ day ~ '/' ~ calendar.year %}
+                                <h4 class="day">{{ title_date|date(config.plugins.events.calendar.details.title) }}</h4>
+                                <ul>
+                                    {% for event in calendar.events[calendar.year][calendar.month][day] %}
+                                        {% if event.title %}
+                                            <li class="event">
+                                                {% include 'partials/event_calendar_item.html.twig' with { 'event':event } %}
+                                            </li>
+                                        {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </div>
+
+                        </div>
+                    </td>
+                    {% if loop.last and dow != 6 %}
+                        <td colspan="{{ 6 - dow }}">&nbsp;</td>
+                    {% endif %}
+                    {% if dow == 6 %}
+                        {% set dow = 0 %}
+                    </tr>
+                    <tr>
+                    {% else %}
+                        {% set dow = dow + 1 %}
+                    {% endif %}
+                {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+
+    <section class="calendar-details modal;">
+
+        <div class="calendar-day-details">
+            {% set day = "now"|date("j") %}
+            {% set month = "now"|date("n") %}
+            {% set year = "now"|date("Y") %}
+            <h3 class="day">{{ "now"|date(config.plugins.events.calendar.details.title) }}</h3>
+            <ul>
+                {% if calendar.events[year][month][day] == null %}
+                    <li>{{ "PLUGIN_EVENTS.CALENDAR.NO_EVENTS"|t }}</li>
+                {% else %}
+                    {% for event in calendar.events[year][month][day] %}
+                        {% if event.title %}
+                            <li class="event">
+                                {% include 'partials/event_calendar_item.html.twig' with { 'event':event } %}
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+
+        <p class="view-all-events">
+            <a href="{{ base_url_absolute }}/events">{{ "PLUGIN_EVENTS.CALENDAR.VIEW_ALL_EVENTS"|t }}</a>
+        </p>
+
+    </section>
+
+      <div class=" calendar-modal modal" id="calendarModal1" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
+              <div class="modal-body">
+                  <h1>First Item</h1>
+                  <a href="#">
+                      <img src="/deliver-skeleton/user/pages/01.home/_callout/work1.jpg" class="img-responsive img-centered" alt="">
+                  </a>
+                  <p>Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum.</p>
+                  <ul class="client-details">
+                      <li>Client:
+                          <strong>
+                              <a href="#">Some Company</a>
+                          </strong>
+                      </li>
+                      <li>Date:
+                          <strong>
+                              April 2014
+                          </strong>
+                      </li>
+                      <li>Service:
+                          <strong>
+                              Web Development
+                          </strong>
+                      </li>
+                  </ul>
+                  <button type="button" class="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+          </div>
+      </div>
+
+  </div><!--.calendar-container-->
+
+</div>
+
+{% endblock %}

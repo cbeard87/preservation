@@ -1,0 +1,75 @@
+title: 'Bluefield Preservation Society'
+default_lang: en
+author:
+  name: 'Christopher Beard'
+  email: contact@bluefieldps.com
+  copyright: '&copy; 2017 Bluefield Preservation Society'
+taxonomies:
+  - category
+  - tag
+  - author
+metadata:
+  description: 'The Bluefield Preservation Society is a 501(c)3 organization created by a group of visionary Bluefield residents passionate about their hometown and dedicated to the idea of restoring Bluefield to a more vibrant and productive city.'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+routes:
+  /something/else: /blog/sample-3
+  /another/one/here: /blog/sample-3
+  '/new/*': '/blog/*'
+blog:
+  route: /blog
+social:
+  -
+    url: 'https://www.facebook.com/Bluefield-Preservation-Society-536389553077971/'
+    icon: facebook
+  -
+    url: blog.rss
+    icon: rss
+contact:
+  address:
+    -
+      line: '1708 Jefferson St'
+    -
+      line: 'Bluefield, WV 24701'
+  gps: '(304) 589-0239'
+othermenu:
+  -
+    text: 'Created by Dealman Advertising'
+    url: 'http://www.dealmanadvertising.com/'
+quicklinks:
+  -
+    text: 'City of Bluefield'
+    url: 'http://www.cityofbluefield.com/'
+  -
+    text: 'Chamber of Commerce'
+    url: 'http://www.bluefieldchamber.com/'
+  -
+    text: 'Visit Mercer County'
+    url: 'http://visitmercercounty.com/'
+  -
+    text: 'Bluefield Historical Society'
+    url: 'http://www.bluefieldhistoricalsociety.org/'
+  -
+    text: MyBluefield
+    url: 'http://mybluefield.org/'
+header_options:
+  arrows: 'false'
+  autoslide: 'true'
+  autoslideHoverStop: 'true'
+  interval: '5000'
+  loop: 'true'
+  transition: zoom
+  itemsForSlide: '0'
+  touch: 'true'
+  swipe: 'true'
+footer:
+  description: 'The Bluefield Preservation Society is a registered 501(c)3 public organization.'
+  contact_title: Contact
+  links_title: 'Helpful Links'
+  newsletter_title: Newsletter
+  newsletter_description: 'Sign up for the BPS Monthly Newsletter'
+  copyright_text: 'Copyright 2017 Bluefield Preservation Society'
+  feedburner: ''
