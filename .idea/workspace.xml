@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7126b36-e670-40ae-92c9-838e5a288c18" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/plugins/flex-directory/admin/pages/flex-directory.md" afterPath="$PROJECT_DIR$/user/plugins/flex-directory/admin/pages/flex-directory.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/plugins/flex-directory/blueprints/entries.yaml" afterPath="$PROJECT_DIR$/user/plugins/flex-directory/blueprints/entries.yaml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,7 +15,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="save-redirect.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/admin/templates/forms/fields/save-redirect/save-redirect.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entries.yaml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/blueprints/entries.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -49,6 +70,7 @@
         <option value="$PROJECT_DIR$/user/themes/deliver/templates/modular/footer.html.twig" />
         <option value="$PROJECT_DIR$/user/plugins/flex-directory/admin/pages/flex-directory.md" />
         <option value="$PROJECT_DIR$/user/plugins/flex-directory/blueprints.yaml" />
+        <option value="$PROJECT_DIR$/user/plugins/flex-directory/blueprints/entries.yaml" />
       </list>
     </option>
   </component>
@@ -194,11 +216,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flex-directory" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,6 +328,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fields" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="save-redirect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BPS-Site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BPS-Site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flex-directory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -333,36 +393,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BPS-Site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BPS-Site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grav" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -499,17 +529,18 @@
       <option name="presentableId" value="Default" />
       <updated>1493342685014</updated>
       <workItem from="1493342687961" duration="172000" />
-      <workItem from="1493342875304" duration="14365000" />
+      <workItem from="1493342875304" duration="15495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14537000" />
+    <option name="totallyTimeSpent" value="15667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956153" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956153" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -538,105 +569,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/user/plugins/taxonomylist/templates/partials/taxonomylist.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding>
-              <marker date="1493291142000" expanded="true" signature="1300:1304" ph="true" />
-              <marker date="1493291142000" expanded="true" signature="1319:1323" ph="true" />
-              <marker date="1493291142000" expanded="true" signature="1335:1376" ph="user://da…tries.json" />
-              <marker date="1493291142000" expanded="true" signature="1393:1442" ph="plugin://…tries.yaml" />
-              <marker date="1493291142000" expanded="true" signature="1466:1491" ph="theme://a…/templates" />
-              <marker date="1493291142000" expanded="true" signature="3283:4411" ph="title: &lt;1 key&gt;" />
-              <marker date="1493291142000" expanded="true" signature="3290:3304" ph="Flex Directory" />
-              <marker date="1493291142000" expanded="true" signature="3309:4411" ph="form: &lt;2 keys&gt;" />
-              <marker date="1493291142000" expanded="true" signature="3333:3338" ph="loose" />
-              <marker date="1493291142000" expanded="true" signature="3350:4411" ph="fields: &lt;7 keys&gt;" />
-              <marker date="1493291142000" expanded="true" signature="3366:3622" ph="published: &lt;6 keys&gt;" />
-              <marker date="1493291142000" expanded="true" signature="3393:3399" ph="toggle" />
-              <marker date="1493291142000" expanded="true" signature="3417:3426" ph="Published" />
-              <marker date="1493291142000" expanded="true" signature="3481:3552" ph="options: &lt;2 keys&gt;" />
-              <marker date="1493291142000" expanded="true" signature="3505:3521" ph="PLUGIN_ADMIN.YES" />
-              <marker date="1493291142000" expanded="true" signature="3537:3552" ph="PLUGIN_ADMIN.NO" />
-              <marker date="1493291142000" expanded="true" signature="3563:3622" ph="validate: &lt;2 keys&gt;" />
-              <marker date="1493291142000" expanded="true" signature="3591:3595" ph="bool" />
-              <marker date="1493291142000" expanded="true" signature="3618:3622" ph="true" />
-              <marker date="1493291142000" expanded="true" signature="3631:3736" ph="last_name: &lt;3 keys&gt;" />
-              <marker date="1493291142000" expanded="true" signature="3658:3662" ph="text" />
-              <marker date="1493291142000" expanded="true" signature="3680:3689" ph="Last Name" />
-              <marker date="1493291142000" expanded="true" signature="3700:3736" ph="validate: &lt;1 key&gt;" />
-              <marker date="1493291142000" expanded="true" signature="3732:3736" ph="true" />
-              <marker date="1493291142000" expanded="true" signature="3745:3805" ph="first_name: &lt;2 keys&gt;" />
-              <marker date="1493291142000" expanded="true" signature="3773:3777" ph="text" />
-              <marker date="1493291142000" expanded="true" signature="3795:3805" ph="First Name" />
-              <marker date="1493291142000" expanded="true" signature="3814:3912" ph="email: &lt;3 keys&gt;" />
-              <marker date="1493291142000" expanded="true" signature="3837:3842" ph="email" />
-              <marker date="1493291142000" expanded="true" signature="3860:3865" ph="Email" />
-              <marker date="1493291142000" expanded="true" signature="3876:3912" ph="validate: &lt;1 key&gt;" />
-              <marker date="1493291142000" expanded="true" signature="3908:3912" ph="true" />
-              <marker date="1493291142000" expanded="true" signature="3921:3975" ph="website: &lt;2 keys&gt;" />
-              <marker date="1493291142000" expanded="true" signature="3946:3950" ph="text" />
-              <marker date="1493291142000" expanded="true" signature="3968:3975" ph="Website" />
-              <marker date="1493291142000" expanded="true" signature="3984:4132" ph="tags: &lt;5 keys&gt;" />
-              <marker date="1493291142000" expanded="true" signature="4006:4015" ph="selectize" />
-              <marker date="1493291142000" expanded="true" signature="4032:4037" ph="large" />
-              <marker date="1493291142000" expanded="true" signature="4055:4059" ph="Tags" />
-              <marker date="1493291142000" expanded="true" signature="4079:4084" ph="fancy" />
-              <marker date="1493291142000" expanded="true" signature="4095:4132" ph="validate: &lt;1 key&gt;" />
-              <marker date="1493291142000" expanded="true" signature="4123:4132" ph="commalist" />
-              <marker date="1493291142000" expanded="true" signature="4146:4411" ph="tools_section: &lt;3 keys&gt;" />
-              <marker date="1493291142000" expanded="true" signature="4177:4184" ph="section" />
-              <marker date="1493291142000" expanded="true" signature="4210:4224" ph="overlay bottom" />
-              <marker date="1493291142000" expanded="true" signature="4245:4411" ph="fields: &lt;1 key&gt;" />
-              <marker date="1493291142000" expanded="true" signature="4270:4411" ph="_post_entries_save: &lt;3 keys&gt;" />
-              <marker date="1493291142000" expanded="true" signature="4311:4343" ph="PLUGIN_FL…AFTER_SAVE" />
-              <marker date="1493291142000" expanded="true" signature="4364:4377" ph="save-redirect" />
-              <marker date="1493291142000" expanded="true" signature="4401:4411" ph="create-new" />
-              <marker date="1493291142000" expanded="true" signature="7054:7349" ph="{% if entry.website ...%}" />
-              <marker date="1493291142000" expanded="true" signature="7366:7512" ph="{% if entry.email ...%}" />
-              <marker date="1493291142000" expanded="true" signature="7529:7636" ph="{% if entry.phone ...%}" />
-              <marker date="1493291142000" expanded="true" signature="7811:7989" ph="..." />
-              <marker date="1493291142000" expanded="true" signature="7835:7910" ph="{...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/css/filter.formatter.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/css/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/plugins/events/templates/event.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/themes/deliver/js/deliver.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-225">
@@ -917,33 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/data/entries.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/flex-directory.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/admin/pages/flex-directory.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="16">
-            <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/accounts/mwarner.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -952,26 +857,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/blueprints/entries.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/templates/flex-directory.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/blueprints.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1004,6 +893,91 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/admin/pages/flex-directory.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="16">
+            <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/data/entries.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/js/list.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/blueprints.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/flex-directory.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/plugins/login/templates/partials/messages.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/plugins/login/templates/partials/forgot-form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/plugins/email/templates/email/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2449">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/admin/templates/forms/fields/save-redirect/save-redirect.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/blueprints/entries.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
           <folding />
         </state>
       </provider>
