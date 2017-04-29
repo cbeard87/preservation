@@ -36,7 +36,7 @@
                 </td>
                 <td>
                     {% if entry.project_donation_url %}
-                    <a href="{{ entry.project_donation_url }}" target="_blank"><i class="fa fa-link"></i>View Donations</a>
+                    <a href="{{ entry.project_donation_url }}" target="_blank"><i class="fa fa-link"></i> View Donations</a>
                     {% else %}
                     <a href="https://donorbox.org/forms/new" target="_blank">Start Campaign</a>
                     {% endif %}
@@ -45,7 +45,7 @@
                     <i class="fa fa-usd"></i>{{ entry.project_goal }}
                 </td>
                 <td>
-                    {{ entry.project_completion_date }}
+                    {{ entry.project_completion_date|nicetime(false) }}
                 </td>
                 <td>
 
