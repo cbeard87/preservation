@@ -7,24 +7,30 @@
         </button>
     </div>
 
-    <ul class="list">
+    <div class="project-list">
         {% for entry in data if entry.active %}
-            <li>
-                <div class="entry-details">
-                    <span class="name">{{ entry.project_name }}</span>
-                    <p class="location">{{ entry.project_location }}</p>
+
+                <div class="project-item">
+                    <div class="project-left">
+                        <h4 class="name">{{ entry.project_name }}</h4>
+                        <img src="{{ entry.project_image }}" alt="{{ entry.project_name }}">
+                    </div>
+                    <div class="project-right">
+                        <p class="description">{{ entry.project_description }}</p>
+                        {% if entry.project_donation_url %}
+                        <a href="{{ entry.project_donation_url }}" target="_blank" class="button-donate">Donate</a>
+                        {% endif %}
+                    </div>
                 </div>
-                <div class="entry-extra">
-                    <p>{{ entry.project_description|striptags|safe_truncate(20) }}</p>
-                </div>
-            </li>
+
+
         {% endfor %}
-    </ul>
+    </div>
 </div>
 
 <script>
     var options = {
-        valueNames: [ 'name', 'location', 'entry-extra' ]
+        valueNames: [ 'name', 'description', 'entry-extra' ]
     };
 
     var flexList = new List('flex-directory', options);

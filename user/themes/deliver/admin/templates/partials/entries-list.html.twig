@@ -17,7 +17,7 @@
         <thead>
         <tr>
             <th>Project Name</th>
-            <th>Location</th>
+            <th>Donation URL</th>
             <th>Goal</th>
             <th>Projected Completion</th>
             <th>&nbsp;</th>
@@ -35,7 +35,11 @@
                     <a href="{{ entry_url ~ id }}">{{ entry.project_name }}</a>
                 </td>
                 <td>
-                    {{ entry.project_location }}
+                    {% if entry.project_donation_url %}
+                    <a href="{{ entry.project_donation_url }}" target="_blank"><i class="fa fa-link"></i>View Donations</a>
+                    {% else %}
+                    <a href="https://donorbox.org/forms/new" target="_blank">Start Campaign</a>
+                    {% endif %}
                 </td>
                 <td>
                     <i class="fa fa-usd"></i>{{ entry.project_goal }}

@@ -48,6 +48,10 @@ form:
       help: The address where this project is taking place.
       validate:
         required: true
+    project_donation_url:
+      type: text
+      label: Donation URL
+      help: The web address to this project's donation page.
     project_goal:
       type: text
       label: Goal
