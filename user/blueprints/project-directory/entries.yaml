@@ -24,7 +24,7 @@ form:
       type: filepicker
       label: Featured Image
       help: Select an image to be featured for this project.
-      folder: 'user/assets/project-files'
+      folder: 'user/data/project-files'
       preview_images: true
       accept:
         - .png

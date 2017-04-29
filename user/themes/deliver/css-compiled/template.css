@@ -1854,4 +1854,10 @@ div.project-right {
   width: 50%;
   text-align: left;
 }
+
+@media only all and (max-width: 47.938em) {
+  div.project-left, div.project-right {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=template.css.map */

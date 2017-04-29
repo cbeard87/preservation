@@ -1,5 +1,5 @@
 {% set data = flex_entries.getData().toArray()|sort_by_key('project_name') %}
-<div id="flex-directory">
+<div id="flex-directory content-wrapper">
     <div class="text-center">
         <input class="form-input search" type="text" placeholder="Search by project name or description" />
         <button class="button button-primary sort asc" data-sort="name">
@@ -13,7 +13,7 @@
                 <div class="project-item">
                     <div class="project-left">
                         <h4 class="name">{{ entry.project_name }}</h4>
-                        <img src="{{ entry.project_image }}" alt="{{ entry.project_name }}">
+                        <img src="{{ entry.project_image }}" alt="{{ entry.project_image }}">
                     </div>
                     <div class="project-right">
                         <p class="description">{{ entry.project_description }}</p>
