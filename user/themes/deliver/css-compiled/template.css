@@ -1860,7 +1860,7 @@ div.project-right {
 }
 
 @media only all and (max-width: 59.938em) {
-  .header-lite #header {
+  .header-lite #header, .modular.header-image #header {
     height: 6rem;
   }
 
