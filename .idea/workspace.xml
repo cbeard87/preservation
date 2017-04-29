@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7126b36-e670-40ae-92c9-838e5a288c18" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/accounts/mwarner.yaml" afterPath="$PROJECT_DIR$/user/accounts/mwarner.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/plugins/admin/themes/grav/templates/partials/messages.html.twig" afterPath="$PROJECT_DIR$/user/plugins/admin/themes/grav/templates/partials/messages.html.twig" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="messages.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user/plugins/admin/themes/grav/templates/partials/messages.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="112">
+              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -77,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/classes/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1582">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="112" column="9" lean-forward="true" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -123,8 +123,8 @@
       <find>MESSAGE</find>
       <find>.top</find>
       <find>.notice.a</find>
-      <find>#messages</find>
       <find>.header-lite #header</find>
+      <find>#messages</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,8 +163,8 @@
         <option value="$PROJECT_DIR$/user/themes/deliver/admin/templates/partials/entries-list.html.twig" />
         <option value="$PROJECT_DIR$/user/plugins/admin/themes/grav/css-compiled/template.css" />
         <option value="$PROJECT_DIR$/user/blueprints/project-directory/entries.yaml" />
-        <option value="$PROJECT_DIR$/user/plugins/admin/themes/grav/templates/partials/messages.html.twig" />
         <option value="$PROJECT_DIR$/user/accounts/mwarner.yaml" />
+        <option value="$PROJECT_DIR$/user/plugins/admin/themes/grav/templates/partials/messages.html.twig" />
       </list>
     </option>
   </component>
@@ -1031,12 +1031,12 @@
       <workItem from="1493342687961" duration="172000" />
       <workItem from="1493342875304" duration="15495000" />
       <workItem from="1493420804044" duration="12563000" />
-      <workItem from="1493439428679" duration="15653000" />
+      <workItem from="1493439428679" duration="15786000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43883000" />
+    <option name="totallyTimeSpent" value="44016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1450,14 +1450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/plugins/admin/themes/grav/templates/partials/messages.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/grav.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1478,14 +1470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-253">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/plugins/admin/themes/grav/css-compiled/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="4" column="142578" lean-forward="false" selection-start-line="4" selection-start-column="142569" selection-end-line="4" selection-end-column="142578" />
           <folding />
         </state>
       </provider>
@@ -1543,8 +1527,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/plugins/flex-directory/classes/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1582">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="112" column="9" lean-forward="true" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/plugins/admin/themes/grav/css-compiled/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="4" column="142578" lean-forward="false" selection-start-line="4" selection-start-column="142569" selection-end-line="4" selection-end-column="142578" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/plugins/admin/themes/grav/templates/partials/messages.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding />
         </state>
       </provider>
