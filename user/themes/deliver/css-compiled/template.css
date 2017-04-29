@@ -1860,8 +1860,22 @@ div.project-right {
 }
 
 @media only all and (max-width: 59.938em) {
+  .header-lite #header {
+    height: 6rem;
+  }
+
+  #header .logo {
+    height: 100%;;
+  }
+
   #flex-directory div.project-left, div.project-right {
     width: 100%;
+    margin-top: 2rem;
+  }
+
+  #flex-directory .search, #flex-directory button.sort {
+    width: 90%;
+
   }
 
   div.project-item {
