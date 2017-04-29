@@ -3,6 +3,7 @@ access:
   admin:
     login: true
     super: true
+    flex-directory: true
   site:
     login: true
 fullname: 'Mark Warner'
