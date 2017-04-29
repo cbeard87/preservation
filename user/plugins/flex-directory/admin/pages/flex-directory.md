@@ -1,5 +1,5 @@
 ---
-title: Member Directory
+title: Projects
 
 access:
     admin.flex-directory: true
