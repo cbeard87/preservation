@@ -20,37 +20,26 @@ form:
       label: Project Name
       validate:
         required: true
+    project_image:
+      type: filepicker
+      label: Featured Image
+      help: Select an image to be featured for this project.
+      folder: 'user/assets/project-files'
+      preview_images: true
+      accept:
+        - .png
+        - .jpg
     project_description:
       type: editor
       label: Description
-      validate:
-        required: true
-    columns:
-      type: columns
-      fields:
-        column1:
-          type: column
-          fields:
-            project_upload:
-              type: file
-              label: Upload Files
-              help: Upload files related to this project.
-              destination: 'user/assets/project-files'
-              multiple: true
-              accept:
-                - '*'
-        column2:
-          type: column
-          fields:
-            project_image:
-              type: filepicker
-              label: Featured Image
-              help: Select an image to be featured for this project.
-              folder: 'user/assets/project-files'
-              preview_images: true
-              accept:
-                - .png
-                - .jpg
+    project_upload:
+      type: file
+      label: Upload Files
+      help: Upload files related to this project.
+      destination: 'user/assets/project-files'
+      multiple: true
+      accept:
+        - '*'
     project_location:
       type: text
       label: Location
