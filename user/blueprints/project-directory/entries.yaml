@@ -30,8 +30,10 @@ form:
         - .png
         - .jpg
     project_description:
-      type: editor
+      type: textarea
       label: Description
+      validate:
+        required: true
     project_upload:
       type: file
       label: Upload Files
