@@ -38,7 +38,7 @@ form:
       type: file
       label: Upload Files
       help: Upload files related to this project.
-      destination: 'user/assets/project-files'
+      destination: 'user/data/project-files'
       multiple: true
       accept:
         - '*'
