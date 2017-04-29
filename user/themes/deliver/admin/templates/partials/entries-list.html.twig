@@ -8,10 +8,10 @@
 {% else %}
     <table id="data-table" class="tablesorter tablesorter-default">
         <colgroup>
-            <col width="24" />
-            <col width="24" />
-            <col width="22" />
-            <col width="22" />
+            <col width="32" />
+            <col width="16" />
+            <col width="12" />
+            <col width="16" />
             <col width="8" />
         </colgroup>
         <thead>
@@ -36,9 +36,9 @@
                 </td>
                 <td>
                     {% if entry.project_donation_url %}
-                    <a href="{{ entry.project_donation_url }}" target="_blank"><i class="fa fa-link"></i> View Donations</a>
+                    <a href="{{ entry.project_donation_url }}" target="_blank"><i class="fa fa-users"></i> View Donations</a>
                     {% else %}
-                    <a href="https://donorbox.org/forms/new" target="_blank">Start Campaign</a>
+                    <a href="https://donorbox.org/forms/new" target="_blank"><i class="fa fa-user-plus"></i> Start Campaign</a>
                     {% endif %}
                 </td>
                 <td>

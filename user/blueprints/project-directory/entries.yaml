@@ -55,6 +55,7 @@ form:
     project_goal:
       type: text
       label: Goal
+      prepend: '<i class="fa fa-used"></i>'
       help: How much money is needed in order to complete this project?
     project_completion_date:
       type: date
