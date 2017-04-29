@@ -1865,11 +1865,15 @@ div.project-right {
   }
 
   .header-lite #body {
-    padding-top: 8rem;
+    padding-top: 6rem;
   }
 
   #header .logo {
     height: 100%;;
+  }
+
+  div#flex-directory {
+    padding-top: 2rem;
   }
 
   #flex-directory div.project-left, div.project-right {
