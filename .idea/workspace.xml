@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7126b36-e670-40ae-92c9-838e5a288c18" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/blueprints/project-directory/entries.yaml" afterPath="$PROJECT_DIR$/user/blueprints/project-directory/entries.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/deliver/templates/project-directory/site.html.twig" afterPath="$PROJECT_DIR$/user/themes/deliver/templates/project-directory/site.html.twig" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,21 +26,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entries.yaml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entries.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/blueprints/project-directory/entries.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="40" column="44" lean-forward="true" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+            <state relative-caret-position="672">
+              <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="site.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user/themes/deliver/templates/project-directory/site.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="112">
+              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -88,9 +88,9 @@
         <option value="$PROJECT_DIR$/user/plugins/flex-directory/templates/flex-directory/site.html.twig" />
         <option value="$PROJECT_DIR$/user/config/plugins/flex-directory.yaml" />
         <option value="$PROJECT_DIR$/user/themes/deliver/admin/templates/partials/entries-list.html.twig" />
-        <option value="$PROJECT_DIR$/user/themes/deliver/templates/project-directory/site.html.twig" />
         <option value="$PROJECT_DIR$/user/themes/deliver/css-compiled/template.css" />
         <option value="$PROJECT_DIR$/user/blueprints/project-directory/entries.yaml" />
+        <option value="$PROJECT_DIR$/user/themes/deliver/templates/project-directory/site.html.twig" />
       </list>
     </option>
   </component>
@@ -603,12 +603,12 @@
       <workItem from="1493342687961" duration="172000" />
       <workItem from="1493342875304" duration="15495000" />
       <workItem from="1493420804044" duration="12563000" />
-      <workItem from="1493439428679" duration="5357000" />
+      <workItem from="1493439428679" duration="5543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33587000" />
+    <option name="totallyTimeSpent" value="33773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1009,18 +1009,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/themes/deliver/templates/project-directory/site.html.twig">
+    <entry file="file://$PROJECT_DIR$/user/blueprints/project-directory/entries.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="672">
+          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/blueprints/project-directory/entries.yaml">
+    <entry file="file://$PROJECT_DIR$/user/themes/deliver/templates/project-directory/site.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="40" column="44" lean-forward="true" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+        <state relative-caret-position="112">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding />
         </state>
       </provider>
