@@ -32,6 +32,7 @@ form:
     project_description:
       type: textarea
       label: Description
+      rows: 6
       validate:
         required: true
     project_upload:
