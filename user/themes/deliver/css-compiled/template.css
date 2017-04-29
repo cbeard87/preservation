@@ -1864,23 +1864,26 @@ div.project-right {
     height: 6rem;
   }
 
+  .header-lite #body {
+    padding-top: 8rem;
+  }
+
   #header .logo {
     height: 100%;;
   }
 
   #flex-directory div.project-left, div.project-right {
     width: 100%;
-    margin-top: 2rem;
   }
 
-  #flex-directory .search, #flex-directory button.sort {
-    width: 90%;
-
+  #flex-directory input.search, #flex-directory button.sort {
+    width: 90% !important;
   }
 
   div.project-item {
     flex-wrap: wrap;
     padding: 2rem;
+    margin-top: 2rem;
   }
 }
 /*# sourceMappingURL=template.css.map */
