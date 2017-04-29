@@ -1,7 +1,7 @@
 en:
   PLUGIN_FLEX_DIRECTORY:
-    TITLE: FlexDirectory
+    TITLE: Projects
     AFTER_SAVE: After Save...
-    CREATE_NEW: Create New Item
-    EDIT: Edit Item
-    LIST: List Items
+    CREATE_NEW: Create New Project
+    EDIT: Edit Existing Project
+    LIST: List Projects

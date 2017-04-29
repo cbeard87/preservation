@@ -1,0 +1,33 @@
+{% set data = flex_entries.getData().toArray()|sort_by_key('project_name') %}
+<div id="flex-directory">
+    <div class="text-center">
+        <input class="form-input search" type="text" placeholder="Search by project name or description" />
+        <button class="button button-primary sort asc" data-sort="name">
+            Sort by Project Name
+        </button>
+    </div>
+
+    <ul class="list">
+        {% for entry in data if entry.active %}
+            <li>
+                <div class="entry-details">
+                    <span class="name">{{ entry.project_name }}</span>
+                    <p class="location">{{ entry.project_location }}</p>
+                </div>
+                <div class="entry-extra">
+                    <p>{{ entry.project_description|striptags|safe_truncate(20) }}</p>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<script>
+    var options = {
+        valueNames: [ 'name', 'location', 'entry-extra' ]
+    };
+
+    var flexList = new List('flex-directory', options);
+</script>
+
+

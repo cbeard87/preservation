@@ -1,0 +1,80 @@
+title: Projects
+form:
+  validation: loose
+
+  fields:
+    active:
+      type: toggle
+      label: Active
+      help: Is this project currently active?
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.YES
+        0: PLUGIN_ADMIN.NO
+      validate:
+        type: bool
+        required: true
+    project_name:
+      type: text
+      label: Project Name
+      validate:
+        required: true
+    project_description:
+      type: editor
+      label: Description
+      validate:
+        required: true
+    columns:
+      type: columns
+      fields:
+        column1:
+          type: column
+          fields:
+            project_upload:
+              type: file
+              label: Upload Files
+              help: Upload files related to this project.
+              destination: 'user/assets/project-files'
+              multiple: true
+              accept:
+                - '*'
+        column2:
+          type: column
+          fields:
+            project_image:
+              type: filepicker
+              label: Featured Image
+              help: Select an image to be featured for this project.
+              folder: 'user/assets/project-files'
+              preview_images: true
+              accept:
+                - .png
+                - .jpg
+    project_location:
+      type: text
+      label: Location
+      help: The address where this project is taking place.
+      validate:
+        required: true
+    project_goal:
+      type: text
+      label: Goal
+      help: How much money is needed in order to complete this project?
+    project_completion_date:
+      type: date
+      size: large
+      label: Projected Completion Date
+      help: When is this project supposed to be finished?
+
+    # Don't mess with this stuff below unless you know what you are doing
+    tools_section:
+      type: section
+      field_classes: overlay bottom
+
+      fields:
+        _post_entries_save:
+          label: PLUGIN_FLEX_DIRECTORY.AFTER_SAVE
+          type: save-redirect
+          default: create-new
+
