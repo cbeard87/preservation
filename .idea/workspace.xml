@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7126b36-e670-40ae-92c9-838e5a288c18" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/user/data/project-files/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/plugins/flex-directory/admin/pages/flex-directory.md" afterPath="$PROJECT_DIR$/user/plugins/flex-directory/admin/pages/flex-directory.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/deliver/css-compiled/template.css" afterPath="$PROJECT_DIR$/user/themes/deliver/css-compiled/template.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/deliver/templates/project-directory/site.html.twig" afterPath="$PROJECT_DIR$/user/themes/deliver/templates/project-directory/site.html.twig" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="template.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user/themes/deliver/css-compiled/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="1845" column="19" lean-forward="true" selection-start-line="1845" selection-start-column="19" selection-end-line="1845" selection-end-column="19" />
+            <state relative-caret-position="-877">
+              <caret line="272" column="58" lean-forward="true" selection-start-line="272" selection-start-column="58" selection-end-line="272" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -31,8 +30,8 @@
       <file leaf-file-name="site.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/themes/deliver/templates/project-directory/site.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+            <state relative-caret-position="320">
+              <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -46,6 +45,7 @@
       <find>.button</find>
       <find>logo</find>
       <find>logo-transition</find>
+      <find>#navbar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -80,9 +80,9 @@
         <option value="$PROJECT_DIR$/user/config/plugins/flex-directory.yaml" />
         <option value="$PROJECT_DIR$/user/themes/deliver/admin/templates/partials/entries-list.html.twig" />
         <option value="$PROJECT_DIR$/user/blueprints/project-directory/entries.yaml" />
+        <option value="$PROJECT_DIR$/user/plugins/flex-directory/admin/pages/flex-directory.md" />
         <option value="$PROJECT_DIR$/user/themes/deliver/templates/project-directory/site.html.twig" />
         <option value="$PROJECT_DIR$/user/themes/deliver/css-compiled/template.css" />
-        <option value="$PROJECT_DIR$/user/plugins/flex-directory/admin/pages/flex-directory.md" />
       </list>
     </option>
   </component>
@@ -717,12 +717,12 @@
       <workItem from="1493342687961" duration="172000" />
       <workItem from="1493342875304" duration="15495000" />
       <workItem from="1493420804044" duration="12563000" />
-      <workItem from="1493439428679" duration="6329000" />
+      <workItem from="1493439428679" duration="7474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34559000" />
+    <option name="totallyTimeSpent" value="35704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1043,17 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/pages/03.our-work/_main/text.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/9/1/d/7/b/91d7b4f22d61e22b90d018680286bf1c03058dfb-blog-header.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1068,14 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="44" column="69" lean-forward="true" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/themes/deliver/templates/project-directory/site.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1198,10 +1179,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/user/pages/03.our-work/_main/text.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/themes/deliver/templates/project-directory/site.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/user/themes/deliver/css-compiled/template.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="1845" column="19" lean-forward="true" selection-start-line="1845" selection-start-column="19" selection-end-line="1845" selection-end-column="19" />
+        <state relative-caret-position="-877">
+          <caret line="272" column="58" lean-forward="true" selection-start-line="272" selection-start-column="58" selection-end-line="272" selection-end-column="58" />
           <folding />
         </state>
       </provider>

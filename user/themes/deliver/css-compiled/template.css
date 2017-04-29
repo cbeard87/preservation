@@ -270,7 +270,7 @@ b, strong, label, th {
               background: #43AD4B;
               color: #fff; }
         @media only all and (max-width: 59.938em) {
-          #header #navbar ul.navigation {
+          #header #navbar, #header #navbar ul.navigation {
             display: none; } }
     #header .panel-activation {
       padding: 1rem;
@@ -1842,8 +1842,8 @@ div.project-item {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-#flex-directory.content-wrapper {
-  padding-bottom: 7rem;
+div#flex-directory {
+  padding-bottom: 4rem !important;
 }
 
 div.project-left {
@@ -1859,9 +1859,14 @@ div.project-right {
   text-align: left;
 }
 
-@media only all and (max-width: 47.938em) {
-  div.project-left, div.project-right {
+@media only all and (max-width: 59.938em) {
+  #flex-directory div.project-left, div.project-right {
     width: 100%;
+  }
+
+  div.project-item {
+    flex-wrap: wrap;
+    padding: 2rem;
   }
 }
 /*# sourceMappingURL=template.css.map */
