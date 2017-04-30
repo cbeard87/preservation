@@ -107,7 +107,7 @@ b, strong, label, th {
     float: left;
     width: 200px;
     height: 65.594px;
-    background-image: url('../images/logo-primary.png');
+    background-image: url('../images/logo-primary.svg');
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -135,7 +135,7 @@ b, strong, label, th {
       float: left;
       width: 150px;
       height: 49.188px;
-      background-image: url('../images/logo-primary.png');
+      background-image: url('../images/logo-primary.svg');
       background-repeat: no-repeat;
       background-size: contain; } }
    
@@ -333,7 +333,7 @@ b, strong, label, th {
   box-shadow: none;
   color: #656161; }
   .header-lite #header .logo a div.logo-transition {
-    background-image: url('../images/logo-alt.png');
+    background-image: url('../images/logo-secondary.svg');
     background-size: contain;
   }
   .header-lite #header a, .header-lite #header .menu-btn {
